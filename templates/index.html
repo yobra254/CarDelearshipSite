@@ -37,7 +37,7 @@
 				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
 					<div class="cs-logo">
 						<div class="cs-media">
-							<figure><a href="index-2.html"><img src="assets/images/cs-logo.png" alt="" /></a></figure>
+							<figure><a href="index-2.html"><img src="{% static 'assets/images/cs-logo.png'%}" alt="" /></a></figure>
 						</div>
 					</div>
 				</div>
@@ -45,416 +45,13 @@
 					<div class="cs-main-nav pull-right">
 						<nav class="main-navigation">
 							<ul>
-								<li><a href="index-2.html">Home</a></li>
-								<li><a href="about-us.html">About Us</a></li>
-								<li><a href="#">Inventory</a>
-									<ul>
-										<li><a href="auto-grid.html">Grid Style</a></li>
-										<li><a href="auto-listing.html">Classic Style</a></li>
-										<li><a href="car-listing-detail.html">Detail Page</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Dealers</a>
-									<ul>
-										<li><a href="agent-listing.html">List View</a></li>
-										<li><a href="agent-detail.html">Detail Page</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Compare</a>
-									<ul>
-										<li><a href="compare.html">Listing</a></li>
-									</ul>
-								</li>
-								<li><a href="#">pages</a>
-									<ul>
-										<li><a href="services.html">Our Services</a></li>
-										<li><a href="user-post-new-vehicles.html">Post a Vehicle</a></li>
-										<li><a href="price-plane.html">Listing Packages</a></li>
-										<li><a href="faq.html">FAQ's & Help</a></li>
-										<li><a href="404.html">404 Page</a></li>
-										<li><a href="search-result.html">Search Result</a></li>
-										<li><a href="underconstruction.html">Under Construction</a></li>
-                                        <li><a href="underconstruction-2.html">Under Construction 2</a></li>
-										<li><a href="signin-page.html">Signup/Sign in</a></li>
-										<li><a href="contact-us.html">Contact us</a></li>
-										
-									</ul>
-								</li>
-								<li><a href="#">News</a>
-									<ul>
-										<li><a href="blog-listing-large.html">Large View</a></li>
-										<li><a href="blog-listing-medium.html">Medium View</a></li>
-										<li><a href="blog-listing-grid.html">Grid View</a></li>
-										<li class="menu-item-has-children"><a href="#">Detail View</a>
-											<ul>
-												<li><a href="blog-detail-sound.html">With Audio</a></li>
-												<li><a href="blog-detail-video.html">With Video</a></li>
-												<li><a href="blog-detail-sound.html">With Soundcloud</a></li>
-												<li><a href="blog-detail-slider.html">With Slider</a></li>
-												<li><a href="blog-detail-post.html">Featured Image</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li><a href="#">Shop</a>
-									<ul>
-										<li><a href="shop-listing.html">Products</a></li>
-										<li><a href="shop-detail.html">Detail View</a></li>
-										<li><a href="shop-cart.html">Cart</a></li>
-										<li><a href="shop-checkout.html">Checkout</a></li>
-									</ul>
-								</li>
-								<li class="cs-user-option">
-									<div class="cs-login">
-										<div class="cs-login-dropdown"> <a href="#"><i class="icon-user2"></i> Kaiser <i class="icon-chevron-down2"></i></a>
-											<div class="cs-user-dropdown"> <strong>Post a new Ad</strong>
-												<ul>
-													<li><a href="user-genral-setting.html">General Setting<span class="cs-bgcolor">3</span></a></li>
-													<li><a href="user-car-listing.html">My Posted Cars <span class="cs-bgcolor">23</span></a></li>
-													<li><a href="user-post-new-vehicles.html">Post New Car</a></li>
-													<li><a href="user-car-shortlist.html">Shortlisted</a></li>
-													<li><a href="user-payments.html">Payment</a></li>
-													<li><a href="user-packages.html">Packages</a></li>
-												</ul>
-												<a class="btn-sign-out" href="#">Logout</a> </div>
-										</div>
-										<a class="cs-bgcolor btn-form" data-toggle="modal" href="http://chimpgroup.com/themeforest/automobile/remote.html" data-target="#user-sign-up" aria-hidden="true"><i class="icon-plus"></i> Sell Car</a> 
-										<!-- Modal -->
-										<div class="modal fade" id="user-sign-up" tabindex="-1" role="dialog">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-													</div>
-													<div class="modal-body">
-														<h4>Create Account</h4>
-														<div class="cs-login-form">
-															<form>
-																<div class="input-holder">
-																	<label for="cs-username"> <strong>USERNAME</strong> <i class="icon-user-plus2"></i>
-																		<input type="text" class="" id="cs-username" placeholder="Type desired username">
-																	</label>
-																</div>
-																<div class="input-holder">
-																	<label for="cs-email"> <strong>Email</strong> <i class="icon-envelope"></i>
-																		<input type="email" class="" id="cs-email" placeholder="Type desired username">
-																	</label>
-																</div>
-																<div class="input-holder">
-																	<label for="cs-login-password"> <strong>Password</strong> <i class="icon-unlock40"></i>
-																		<input type="password" id="cs-login-password" placeholder="******">
-																	</label>
-																</div>
-																<div class="input-holder">
-																	<label for="cs-confirm-password"> <strong>confirm password</strong> <i class="icon-unlock40"></i>
-																		<input type="password" id="cs-confirm-password" placeholder="******">
-																	</label>
-																</div>
-																<div class="input-holder">
-																	<input class="cs-color csborder-color" type="submit" value="Create Account">
-																</div>
-															</form>
-														</div>
-													</div>
-													<div class="modal-footer"> <a data-dismiss="modal" data-target="#user-sign-in" data-toggle="modal" href="javascript:;" aria-hidden="true">Already have account</a>
-														<div class="cs-separator"><span>or</span></div>
-														<div class="cs-user-social"> <em>Signin with your Social Networks</em>
-															<ul>
-																<li><a href="#" data-original-title="facebook"><i class="icon-facebook-f"></i>facebook</a></li>
-																<li><a href="#" data-original-title="twitter"><i class="icon-twitter4"></i>twitter</a></li>
-																<li><a href="#" data-original-title="google-plus"><i class="icon-google4"></i>google</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="modal fade" id="user-sign-in" tabindex="-1" role="dialog">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-													</div>
-													<div class="modal-body">
-														<h4>User Sign in</h4>
-														<div class="cs-login-form">
-															<form>
-																<div class="input-holder">
-																	<label for="cs-username-1"> <strong>USERNAME</strong> <i class="icon-user-plus2"></i>
-																		<input type="text" class="" id="cs-username-1" placeholder="Type desired username">
-																	</label>
-																</div>
-																<div class="input-holder">
-																	<label for="cs-login-password-1"> <strong>Password</strong> <i class="icon-unlock40"></i>
-																		<input type="password" id="cs-login-password-1" placeholder="******">
-																	</label>
-																</div>
-																<div class="input-holder"> <a class="btn-forgot-pass" data-dismiss="modal" data-target="#user-forgot-pass" data-toggle="modal" href="javascript:;" aria-hidden="true"><i class=" icon-question-circle"></i> Forgot password?</a> </div>
-																<div class="input-holder">
-																	<input class="cs-color csborder-color" type="submit" value="SIGN IN">
-																</div>
-															</form>
-														</div>
-													</div>
-													<div class="modal-footer">
-														<div class="cs-separator"><span>or</span></div>
-														<div class="cs-user-social"> <em>Signin with your Social Networks</em>
-															<ul>
-																<li><a href="#" data-original-title="facebook"><i class="icon-facebook-f"></i>facebook</a></li>
-																<li><a href="#" data-original-title="twitter"><i class="icon-twitter4"></i>twitter</a></li>
-																<li><a href="#" data-original-title="google-plus"><i class="icon-google4"></i>google</a></li>
-															</ul>
-														</div>
-														<div class="cs-user-signup"> <i class="icon-user-plus2"></i> <strong>Not a Member yet? </strong> <a class="cs-color" data-dismiss="modal" data-target="#user-sign-up" data-toggle="modal" href="javascript:;" aria-hidden="true">Signup Now</a> </div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="modal fade" id="user-forgot-pass" tabindex="-1" role="dialog">
-											<div class="modal-dialog" role="document">
-												<div class="modal-content">
-													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-													</div>
-													<div class="modal-body">
-														<h4>Password Recovery</h4>
-														<div class="cs-login-form">
-															<form>
-																<div class="input-holder">
-																	<label for="cs-email-1"> <strong>Email</strong> <i class="icon-envelope"></i>
-																		<input type="email" class="" id="cs-email-1" placeholder="Type desired username">
-																	</label>
-																</div>
-																<div class="input-holder">
-																	<input class="cs-color csborder-color" type="submit" value="Send">
-																</div>
-															</form>
-														</div>
-													</div>
-													<div class="modal-footer">
-														<div class="cs-user-signup"> <i class="icon-user-plus2"></i> <strong>Not a Member yet? </strong> <a href="javascript:;" data-toggle="modal" data-target="#user-sign-up" data-dismiss="modal" class="cs-color" aria-hidden="true">Signup Now</a> </div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--<div class="cs-wish-list"><a href="#"><i class=" icon-heart4"></i><span>0</span></a>
-                                        <div class="wish-list-dropdown">
-                                            <strong>Post a new Ad</strong>
-                                            <ul>
-                                                <li class="alert alert-dismissible  fade in" role="alert">
-                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <div class="cs-media">
-                                                        <a href="#">
-                                                            <img src="assets/extra-images/single-banner-img-1.jpg" alt="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="cs-info">
-                                                        <h6><a href="#">Desktop Application Developer Support</a></h6>
-                                                        Added <span>Feb 8, 2016</span>
-                                                    </div>
-                                                </li>
-                                                <li class="alert alert-dismissible  fade in" role="alert">
-                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <div class="cs-media">
-                                                        <a href="#">
-                                                            <img src="assets/extra-images/single-banner-img-2.jpg" alt="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="cs-info">
-                                                        <h6><a href="#">Desktop Application Developer Support</a></h6>
-                                                        Added <span>Feb 8, 2016</span>
-                                                    </div>
-                                                </li>
-                                                <li class="alert alert-dismissible  fade in" role="alert">
-                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <div class="cs-media">
-                                                        <a href="#">
-                                                            <img src="assets/extra-images/single-banner-img-3.jpg" alt="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="cs-info">
-                                                        <h6><a href="#">Desktop Application Developer Support</a></h6>
-                                                        Added <span>Feb 8, 2016</span>
-                                                    </div>
-                                                </li>
-                                                <li class="alert alert-dismissible  fade in" role="alert">
-                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <div class="cs-media">
-                                                        <a href="#">
-                                                            <img src="assets/extra-images/single-banner-img-1.jpg" alt="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="cs-info">
-                                                        <h6><a href="#">Desktop Application Developer Support</a></h6>
-                                                        Added <span>Feb 8, 2016</span>
-                                                    </div>
-                                                </li>
-                                                <li class="alert alert-dismissible  fade in" role="alert">
-                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <div class="cs-media">
-                                                        <a href="#">
-                                                            <img src="assets/extra-images/single-banner-img-2.jpg" alt="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="cs-info">
-                                                        <h6><a href="#">Desktop Application Developer Support</a></h6>
-                                                        Added <span>Feb 8, 2016</span>
-                                                    </div>
-                                                </li>
-                                                <li class="alert alert-dismissible  fade in" role="alert">
-                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <div class="cs-media">
-                                                        <a href="#">
-                                                            <img src="assets/extra-images/single-banner-img-3.jpg" alt="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="cs-info">
-                                                        <h6><a href="#">Desktop Application Developer Support</a></h6>
-                                                        Added <span>Feb 8, 2016</span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <a class="btn-view-all" href="#">View All</a>
-                                        </div>
-                                    </div>--> 
-								</li>
+								<li><a href="{% url 'index' %}">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Inventory</a></li>
+								<li><a href="#">Dealers</a></li>
+								<li><a href="#">Contact</a></li>
 							</ul>
 						</nav>
-                        <div class="cs-user-option hidden-lg visible-sm visible-xs">
-							<div class="cs-login">
-								<div class="cs-login-dropdown"> <a href="#"><i class="icon-user2"></i> Kaiser <i class="icon-chevron-down2"></i></a>
-									<div class="cs-user-dropdown"> <strong>Post a new Ad</strong>
-										<ul>
-											<li><a href="user-genral-setting.html">General Setting<span class="cs-bgcolor">3</span></a></li>
-											<li><a href="user-car-listing.html">My Posted Cars <span class="cs-bgcolor">23</span></a></li>
-											<li><a href="user-post-new-vehicles.html">Post New Car</a></li>
-											<li><a href="user-car-shortlist.html">Shortlisted</a></li>
-											<li><a href="user-payments.html">Payment</a></li>
-											<li><a href="user-packages.html">Packages</a></li>
-										</ul>
-										<a class="btn-sign-out" href="#">Logout</a> </div>
-								</div>
-								<a class="cs-bgcolor btn-form" data-toggle="modal" href="http://chimpgroup.com/themeforest/automobile/remote.html" data-target="#user-sign-up-sm" aria-hidden="true"><i class="icon-plus"></i> Sell Car</a> 
-								<!-- Modal -->
-								<div class="modal fade" id="user-sign-up-sm" tabindex="-1" role="dialog">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-											</div>
-											<div class="modal-body">
-												<h4>Create Account</h4>
-												<div class="cs-login-form">
-													<form>
-														<div class="input-holder">
-															<label for="cs-username11"> <strong>USERNAME</strong> <i class="icon-user-plus2"></i>
-																<input type="text" class="" id="cs-username11" placeholder="Type desired username">
-															</label>
-														</div>
-														<div class="input-holder">
-															<label for="cs-email11"> <strong>Email</strong> <i class="icon-envelope"></i>
-																<input type="email" class="" id="cs-email11" placeholder="Type desired username">
-															</label>
-														</div>
-														<div class="input-holder">
-															<label for="cs-login-password11"> <strong>Password</strong> <i class="icon-unlock40"></i>
-																<input type="password" id="cs-login-password11" placeholder="******">
-															</label>
-														</div>
-														<div class="input-holder">
-															<label for="cs-confirm-password11"> <strong>confirm password</strong> <i class="icon-unlock40"></i>
-																<input type="password" id="cs-confirm-password11" placeholder="******">
-															</label>
-														</div>
-														<div class="input-holder">
-															<input class="cs-color csborder-color" type="submit" value="Create Account">
-														</div>
-													</form>
-												</div>
-											</div>
-											<div class="modal-footer"> <a data-dismiss="modal" data-target="#user-sign-in-sm" data-toggle="modal" href="javascript:;" aria-hidden="true">Already have account</a>
-												<div class="cs-separator"><span>or</span></div>
-												<div class="cs-user-social"> <em>Signin with your Social Networks</em>
-													<ul>
-														<li><a href="#" data-original-title="facebook"><i class="icon-facebook-f"></i>facebook</a></li>
-														<li><a href="#" data-original-title="twitter"><i class="icon-twitter4"></i>twitter</a></li>
-														<li><a href="#" data-original-title="google-plus"><i class="icon-google4"></i>google</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="modal fade" id="user-sign-in-sm" tabindex="-1" role="dialog">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-											</div>
-											<div class="modal-body">
-												<h4>User Sign in</h4>
-												<div class="cs-login-form">
-													<form>
-														<div class="input-holder">
-															<label for="cs-username-111"> <strong>USERNAME</strong> <i class="icon-user-plus2"></i>
-																<input type="text" class="" id="cs-username-111" placeholder="Type desired username">
-															</label>
-														</div>
-														<div class="input-holder">
-															<label for="cs-login-password-111"> <strong>Password</strong> <i class="icon-unlock40"></i>
-																<input type="password" id="cs-login-password-111" placeholder="******">
-															</label>
-														</div>
-														<div class="input-holder"> <a class="btn-forgot-pass" data-dismiss="modal" data-target="#user-forgot-pass-sm" data-toggle="modal" href="javascript:;" aria-hidden="true"><i class=" icon-question-circle"></i> Forgot password?</a> </div>
-														<div class="input-holder">
-															<input class="cs-color csborder-color" type="submit" value="SIGN IN">
-														</div>
-													</form>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<div class="cs-separator"><span>or</span></div>
-												<div class="cs-user-social"> <em>Signin with your Social Networks</em>
-													<ul>
-														<li><a href="#" data-original-title="facebook"><i class="icon-facebook-f"></i>facebook</a></li>
-														<li><a href="#" data-original-title="twitter"><i class="icon-twitter4"></i>twitter</a></li>
-														<li><a href="#" data-original-title="google-plus"><i class="icon-google4"></i>google</a></li>
-													</ul>
-												</div>
-												<div class="cs-user-signup"> <i class="icon-user-plus2"></i> <strong>Not a Member yet? </strong> <a class="cs-color" data-dismiss="modal" data-target="#user-sign-up-sm" data-toggle="modal" href="javascript:;" aria-hidden="true">Signup Now</a> </div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="modal fade" id="user-forgot-pass-sm" tabindex="-1" role="dialog">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-											</div>
-											<div class="modal-body">
-												<h4>Password Recovery</h4>
-												<div class="cs-login-form">
-													<form>
-														<div class="input-holder">
-															<label for="cs-email-111"> <strong>Email</strong> <i class="icon-envelope"></i>
-																<input type="email" class="" id="cs-email-111" placeholder="Type desired username">
-															</label>
-														</div>
-														<div class="input-holder">
-															<input class="cs-color csborder-color" type="submit" value="Send">
-														</div>
-													</form>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<div class="cs-user-signup"> <i class="icon-user-plus2"></i> <strong>Not a Member yet? </strong> <a href="javascript:;" data-toggle="modal" data-target="#user-sign-up-sm" data-dismiss="modal" class="cs-color" aria-hidden="true">Signup Now</a> </div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
 							<!--<div class="cs-wish-list"><a href="#"><i class=" icon-heart4"></i><span>0</span></a>
                             <div class="wish-list-dropdown">
                                 <strong>Post a new Ad</strong>
@@ -547,13 +144,13 @@
 	<!-- Main Start -->
 	<div class="main-section"> 
 		<!--Main Banner-->
-		<div class="page-section" style="background: url(assets/extra-images/full-section-img.jpg)no-repeat; background-size:cover; padding:206px 0 80px; text-shadow: 3px 4px 6px rgba(0,0,0,.37);margin-top:-30px;">
+		<div class="page-section" style="background: url({% static 'assets/extra-images/full-section-img.jpg' %})no-repeat; background-size:cover; padding:206px 0 80px; text-shadow: 3px 4px 6px rgba(0,0,0,.37);margin-top:-30px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="image-frame defualt" style="padding-top:40px;">
 							<div class="cs-media">
-								<figure> <img src="assets/extra-images/image-frame-1.png" alt=""/> </figure>
+								<figure> <img src="{% static 'assets/extra-images/image-frame-1.png'%}" alt=""/> </figure>
 							</div>
 						</div>
 					</div>
@@ -563,7 +160,7 @@
 								TO NEW KIND 
 								OF yum DRIVING 
 								PLEASURE.</h1>
-							<a href="#" class="cs-button" style="color:#fff;width:80px; height:80px; border-radius:50%; line-height:17px; text-align:center; padding-top:20px; letter-spacing:1px; font-weight:bold; vertical-align:middle; text-shadow: 3px 4px 6px rgba(0,0,0,.37); ">Starts From</a> <strong style=" vertical-align:middle; font-size:50px; color:#fff; text-shadow: 3px 4px 6px rgba(0,0,0,.37);"><em style="font-style:normal; font-size:30px; vertical-align:top; line-height:0;">$</em>55,897</strong> </div>
+							<a href="#" class="cs-button" style="color:#fff;width:80px; height:80px; border-radius:50%; line-height:17px; text-align:center; padding-top:20px; letter-spacing:1px; font-weight:bold; vertical-align:middle; text-shadow: 3px 4px 6px rgba(0,0,0,.37); ">Starts From</a> <strong style=" vertical-align:middle; font-size:50px; color:#fff; text-shadow: 3px 4px 6px rgba(0,0,0,.37);"><em style="font-style:normal; font-size:30px; vertical-align:top; line-height:0;">KSH</em>505,897</strong> </div>
 					</div>
 				</div>
 			</div>
@@ -690,7 +287,7 @@
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="image-frame defualt">
 							<div class="cs-media">
-								<figure> <img src="assets/extra-images/image-frame.jpg" alt=""/> </figure>
+								<figure> <img src="{% static 'assets/extra-images/image-frame.jpg'%}" alt=""/> </figure>
 							</div>
 						</div>
 					</div>
@@ -707,73 +304,6 @@
 		</div>
 		<!--image frame with cloum text by My Shahzad--> 
 		<!--full width category section-->
-		<div class="page-section" style="background:#edf0f5 url(assets/extra-images/full-width-img-01.png) no-repeat; padding:100px 0 0 0;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div style="min-height:510px;"></div>
-					</div>
-					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-						<div class="row"> 
-							<!--Element Section Start-->
-							<div class="catagory-section">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="cs-element-title">
-										<h3>Browse cars by make</h3>
-										<span class="cs-color">We currently have 428,897 cars available</span> </div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-									<div class="cs-catagory">
-										<ul>
-											<li><a href="#"><span>Alfa Romeo</span><small>(256)</small></a></li>
-											<li><a href="#"><span>Alpine</span><small>(157)</small></a></li>
-											<li><a href="#"><span>Alpine</span><small>(145)</small></a></li>
-											<li><a href="#"><span>Aston Martin</span><small>(456)</small></a></li>
-											<li><a href="#"><span>Audi</span><small>(856)</small></a></li>
-											<li><a href="#"><span>Bently</span><small>(125)</small></a></li>
-											<li><a href="#"><span>BMW</span><small>(562)</small></a></li>
-											<li><a href="#"><span>Bugatti</span><small>(562)</small></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-									<div class="cs-catagory">
-										<ul>
-											<li><a href="#"><span>Ferrari</span><small>(256)</small></a></li>
-											<li><a href="#"><span>Fiat</span><small>(157)</small></a></li>
-											<li><a href="#"><span>Lamborghini</span><small>(145)</small></a></li>
-											<li><a href="#"><span>Lancia</span><small>(456)</small></a></li>
-											<li><a href="#"><span>Land Rover</span><small>(856)</small></a></li>
-											<li><a href="#"><span>Maserati</span><small>(125)</small></a></li>
-											<li><a href="#"><span>McLaren</span><small>(562)</small></a></li>
-											<li><a href="#"><span>Mercedes-Benz</span><small>(562)</small></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-									<div class="cs-catagory">
-										<ul>
-											<li><a href="#"><span>Mini</span><small>(256)</small></a></li>
-											<li><a href="#"><span>Opel</span><small>(157)</small></a></li>
-											<li><a href="#"><span>Peugeot</span><small>(145)</small></a></li>
-											<li><a href="#"><span>Porsche</span><small>(456)</small></a></li>
-											<li><a href="#"><span>Renault</span><small>(856)</small></a></li>
-											<li><a href="#"><span> Rolls-Royce</span><small>(125)</small></a></li>
-											<li><a href="#"><span>Vauxhall</span><small>(562)</small></a></li>
-											<li><a href="#"><span>Volkswagen</span><small>(562)</small></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="button_style cs-button"> <a href="#">Search for cars</a> </div>
-								</div>
-							</div>
-							<!--Element Section End--> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!--full width category section--> 
 		<!--tabs section-->
 		<div class="page-section" style="padding-top:70px; padding-bottom:65px;">
@@ -801,7 +331,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img1.jpg" alt="#"/>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img1.jpg'%}" alt="#"/>
 																<figcaption> <span class="auto-featured">Featured</span> </figcaption>
 															</figure>
 														</div>
@@ -832,7 +362,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img2.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img2.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -861,7 +391,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img3.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img3.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -890,7 +420,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img4.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img4.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -907,7 +437,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img5.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img5.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -924,7 +454,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img6.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img6.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -941,7 +471,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img7.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img7.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -958,7 +488,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img8.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img8.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -979,7 +509,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img1.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img1.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1008,7 +538,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img2.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img2.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1037,7 +567,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img3.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img3.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1066,7 +596,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img4.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img4.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1083,7 +613,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img5.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img5.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1100,7 +630,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img6.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img6.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1117,7 +647,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img7.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img7.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1134,7 +664,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img8.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img8.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1155,7 +685,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img1.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img1.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1184,7 +714,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img2.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img2.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1213,7 +743,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img3.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img3.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1242,7 +772,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img4.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img4.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1259,7 +789,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img5.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img5.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1276,7 +806,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img6.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img6.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1293,7 +823,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img7.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img7.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1310,7 +840,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img8.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img8.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1331,7 +861,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img1.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img1.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1360,7 +890,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img2.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img2.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1389,7 +919,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img3.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img3.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1418,7 +948,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img4.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img4.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1435,7 +965,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img5.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img5.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1452,7 +982,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img6.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img6.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1469,7 +999,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img7.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img7.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1486,7 +1016,7 @@
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
 														<div class="cs-media">
-															<figure> <img src="assets/extra-images/listing-Grid-img8.jpg" alt="#"/></figure>
+															<figure> <img src="{% static 'assets/extra-images/listing-Grid-img8.jpg'%}" alt="#"/></figure>
 														</div>
 														<div class="auto-text"> <span class="cs-categories"><a href="#">Timlers Motors</a></span>
 															<div class="post-title">
@@ -1621,85 +1151,7 @@
 			</div>
 		</div>
 		<!--Latest Model Auto Slider End-->
-		<div class="page-section" style=" padding-top:70px; padding-bottom:50px;">
-			<div class="container">
-				<div class="row">
-					<div class="section-fullwidtht col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="row"> 
-							<!--Element Section Start-->
-							<div class="cs-blog cs-blog-grid">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="cs-element-title">
-										<h2>WHAT'S TRENDING in Car World</h2>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<div class="cs-blog-listing blog-grid">
-										<div class="cs-media">
-											<figure> <a href="#"><img src="assets/extra-images/blog-listing-1.jpg" alt="" /></a>
-												<figcaption>
-													<div class="caption-text"><span>STICKY POST</span></div>
-												</figcaption>
-											</figure>
-										</div>
-										<div class="blog-text">
-											<div class="post-option"> <span class="post-date">Vehicles</span> </div>
-											<div class="post-title">
-												<h4><a href="#">Avalon Hybrid Built for the endless weekend.</a></h4>
-											</div>
-											<p>Norwegian airline website named Widerøe generated a tremendous amount of buzz and a lot of very happy customers this weekend.</p>
-											<div class="post-meta">
-												<figure><img src="assets/extra-images/blog-grid-1.jpg" alt="" /></figure>
-												<span class="post-by">Anselm Hannemann</span> <em>August 15, 2015</em> </div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<div class="cs-blog-listing blog-grid">
-										<div class="cs-media">
-											<figure> <a href="#"><img src="assets/extra-images/blog-listing-2.jpg" alt="" /></a>
-												<figcaption></figcaption>
-											</figure>
-										</div>
-										<div class="blog-text">
-											<div class="post-option"> <span class="post-date">Motors</span> </div>
-											<div class="post-title">
-												<h4><a href="#">Speed Dual-Clutch Featured Special New ReLease</a></h4>
-											</div>
-											<p>Website named Widerøe generated a tremendous amount of buzz and a lot of very happy customers this weekend when word got out that supposed.</p>
-											<div class="post-meta">
-												<figure><img src="assets/extra-images/blog-grid-2.jpg" alt="" /></figure>
-												<span class="post-by">Arashasghari</span> <em>September 30, 2015</em> </div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<div class="cs-blog-listing blog-grid">
-										<div class="cs-media">
-											<figure> <a href="#"><img src="assets/extra-images/blog-listing-3.jpg" alt="" /></a>
-												<figcaption></figcaption>
-											</figure>
-										</div>
-										<div class="blog-text">
-											<div class="post-option"> <span class="post-date">Cars and Races</span> </div>
-											<div class="post-title">
-												<h4><a href="#">Human laws, but we cannot resist natural ones</a></h4>
-											</div>
-											<p>Amount of buzz and a lot of very happy customers this weekend when word got out that supposed unintentional error in their reservation.</p>
-											<div class="post-meta">
-												<figure><img src="assets/extra-images/blog-grid-3.jpg" alt="" /></figure>
-												<span class="post-by">Darrellwhitelaw</span> <em>October 9, 2015</em> </div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cs-seprater" style="text-align:center;"> <span> <i class="icon-transport177"> </i> </span> </div>
-							<!--Element Section End--> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+
 		<div class="page-section" style="margin-bottom:70px;">
 			<div class="container">
 				<div class="row">
@@ -1766,21 +1218,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="page-section" style="background:#19171a;;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="cs-ad" style="text-align:center; padding:55px 0 25px;">
-							<div class="cs-media">
-								<figure> <a href="#"><img alt="" src="assets/extra-images/cs-ad-img.jpg"></a> </figure>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-	<!-- Main End --> 
+	<!-- Main End -->
+	<div class="container">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63819.90122999492!2d36.654380223603354!3d-1.329758292147602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1c9f26ac0519%3A0x27e09cffb4d4bbe!2sKaren%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1610351784749!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+	</div> 
 	<!-- Footer Start -->
 	<footer id="footer" style="background:#19171a;padding:32px 0 0">
 		<div class="cs-footer-widgets">
@@ -1838,34 +1282,6 @@
 								<li><a href="#">Accessories</a></li>
 								<li><a href="#">Find Your Match</a></li>
 							</ul>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<div class="widget widget-news-letter">
-							<div class="widget-section-title">
-								<h6 style="color:#fff !important">SIGN UP FOR TOYOTA UPDATES</h6>
-							</div>
-							<p>Recently received some brochures from my traders  here are some that might be of interest. </p>
-							<div class="cs-form">
-								<form>
-									<div class="input-holder">
-										<input type="email" placeholder="Enter Valid Email Address">
-										<label> <i class="icon-send2"></i>
-											<input class="cs-bgcolor" type="submit" value="submit">
-										</label>
-									</div>
-								</form>
-							</div>
-							<div class="cs-social-media">
-								<ul>
-									<li><a href="#" data-original-title="facebook"><i class="icon-facebook-f"></i></a></li>
-									<li><a href="#" data-original-title="twitter"><i class="icon-twitter4"></i></a></li>
-									<li><a href="#" data-original-title="linkedin"><i class="icon-linkedin22"></i></a></li>
-									<li><a href="#" data-original-title="google"><i class="icon-google-plus"></i></a></li>
-									<li><a href="#" data-original-title="rss"><i class="icon-rss"></i></a></li>
-									<li><a href="#" data-original-title="vimeo"><i class="icon-vimeo"></i></a></li>
-								</ul>
-							</div>
 						</div>
 					</div>
 				</div>
