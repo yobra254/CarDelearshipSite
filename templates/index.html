@@ -37,12 +37,12 @@
 						<div class="row"> 
 							<!--Element Section Start-->
 							<div class="main-search">
-								<form method="GET" action="">
+								<form method="GET" action="{% url 'filter_results' %}">
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 										<p>Brand:</p>
 										{{myFilter.form.brand}}
 									</div>
-									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+									<div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
 										<p>Category:</p>
 										{{myFilter.form.category}}
 									</div>
@@ -61,6 +61,10 @@
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 										<p>Price Less Than:</p>
 										{{myFilter.form.price_lt}}
+									</div>
+									<div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
+										<p>Transmission:</p>
+										{{myFilter.form.transmission}}
 									</div>
 
                                     <br>

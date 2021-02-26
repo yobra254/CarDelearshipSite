@@ -24,4 +24,17 @@ def index(request):
 def about(request):
     return render(request,'about.html')
 
+def filter_results(request):
+    all = Car.objects.all()
+    myFilter = CarFilter(request.GET, queryset = all)
+    all = myFilter.qs
+
+    context = {
+        'all': all,
+        'myFilter': myFilter,
+    }
+    return render(request, 'filter_results.html', context)
+
+
+
 
