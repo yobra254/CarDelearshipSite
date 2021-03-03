@@ -1,10 +1,67 @@
 {%extends 'base.html'%}
 {% block content %}
 
-{% for car in all %}
 
-{{car.brand}}
+<div class="main-search">
+    <form method="GET" action="{% url 'filter_results' %}">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <p>Brand:</p>
+            {{myFilter.form.brand}}
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
+            <p>Category:</p>
+            {{myFilter.form.category}}
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <p>Year Greater Than:</p>
+            {{myFilter.form.year_gt}}
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <p>Year Less Than:</p>
+            {{myFilter.form.year_lt}}
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <p>Price Greater Than:</p>
+            {{myFilter.form.price_gt}}
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <p>Price Less Than:</p>
+            {{myFilter.form.price_lt}}
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
+            <p>Transmission:</p>
+            {{myFilter.form.transmission}}
+        </div>
 
-{% endfor %}
+        <br>
+        <button class="btn btn-primary" type="submit">Search</button>
+
+    </form>
+</div>
+
+<br> 
+
+<p><h3>Filtered Results:</h3></p>
+
+<div class="row">
+    {% for car in all %}
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="auto-listing auto-grid">
+            <div class="cs-media">
+                <figure> <img src="{{ car.image_main.url }}" alt="#"/></figure>
+            </div>
+            <div class="auto-text"> <span class="cs-categories"><a href="#">{{car.category}}</a></span>
+                <div class="post-title">
+                    <h6><a href="#">{{car.brand}}</a></h6>
+                    <div class="auto-price"><span class="cs-color">${{car.price}}</span></div>
+                    <i class="icon-car228 cs-color" style="font-size:20px"> </i>{{car.transmission}}
+                <br>
+                Year: {{car.year}}
+                </div>
+                <a href="{{ car.get_absolute_url }}" class="View-btn">View Detail<i class=" icon-arrow-long-right"></i></a> </div>
+        </div>
+    </div>
+    {%endfor%}
+</div>
 
 {% endblock content %}

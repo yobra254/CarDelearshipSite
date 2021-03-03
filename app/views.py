@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Car
 from .filters import CarFilter
+
 
 # Create your views here.
 def index(request):
@@ -34,6 +35,16 @@ def filter_results(request):
         'myFilter': myFilter,
     }
     return render(request, 'filter_results.html', context)
+
+def car_detail(request , car_id):
+    cars = get_object_or_404(Car, id=car_id)
+
+
+    context = {
+        'cars': cars
+    }
+    return render(request, 'car_detail.html',context)
+
 
 
 

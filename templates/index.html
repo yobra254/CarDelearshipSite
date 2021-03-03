@@ -141,7 +141,7 @@
 															<i class="icon-car228 cs-color" style="font-size:20px"> </i>{{car.transmission}}
 															<br>
 															Year: {{car.year}}
-															<a href="#" class="View-btn">View Detail<i class=" icon-arrow-long-right"></i></a> </div>
+															<a href="{{ car.get_absolute_url }}" class="View-btn">View Detail<i class=" icon-arrow-long-right"></i></a> </div>
 													</div>
 												</div>
 												{%endfor%}
@@ -163,7 +163,7 @@
 															<br>
 															Year: {{car.year}}
 															</div>
-															<a href="#" class="View-btn">View Detail<i class=" icon-arrow-long-right"></i></a> </div>
+															<a href="{{ car.get_absolute_url }}" class="View-btn">View Detail<i class=" icon-arrow-long-right"></i></a> </div>
 													</div>
 												</div>
 												{%endfor%}
@@ -204,7 +204,7 @@
 											{{car.brand}}
 											<br>
 											Category:{{car.category}}
-											<div class="auto-text cs-bgcolor"> <span>${{car.price}}</span><a href="#" class="cs-button pull-right"><i class="icon-arrow_forward
+											<div class="auto-text cs-bgcolor"> <span>${{car.price}}</span><a href="{{ car.get_absolute_url }}" class="cs-button pull-right"><i class="icon-arrow_forward
 "></i></a> </div>
 										</li>
 										{%endfor%}
