@@ -1,7 +1,46 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="container">
+<br>Dealer:{{cars.dealer.name}}
+<br>Dealer Email:{{cars.dealer.email}}
+<br>Brand:{{cars.brand}}
+<br>Category:{{cars.category}}
+<br>Miles:{{cars.miles}}
+<br>Transmission:{{cars.transmission}}
+<br>Year:{{cars.year}}
+<br>Power:{{cars.power}} hp
+<br>Fuel:{{cars.fuel}} L
+<br><h3>Price:${{cars.price}}</h3>
 
-{{cars.brand}}
-
+<br>{{cars.description}}
+<br>
+<div class="row">
+    {% if cars.image1 %}
+    <div class="col-md-3">
+        <img src="{{cars.image1.url}}" alt="">
+    </div>
+    {% endif %}
+    {% if cars.image2 %}
+    <div class="col-md-3">
+        <img src="{{cars.image2.url}}" alt="">
+    </div>
+    {% endif %}
+    {% if cars.image3 %}
+    <div class="col-md-3">
+        <img src="{{cars.image3.url}}" alt="">
+    </div>
+    {% endif %}
+    {% if cars.image4 %}
+    <div class="col-md-3">
+        <img src="{{cars.image4.url}}" alt="">
+    </div>
+    {% endif %}
+    {% if cars.image5 %}
+    <div class="col-md-3">
+        <img src="{{cars.image5.url}}" alt="">
+    </div>
+    {% endif %}
+</div>
+</div>
 {% endblock content %}
